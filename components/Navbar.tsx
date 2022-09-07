@@ -1,14 +1,9 @@
-import styled from "@emotion/styled";
 import { NextPage } from "next";
 import Link from "next/link";
 import React from "react";
-import tw from "twin.macro";
+import Button from "./styled-components/Button";
 
 interface Props {}
-
-const Button = styled.button(
-    tw`px-3 py-1 border-4 border-black rounded-xl font-bold`
-);
 
 const Navbar: NextPage<Props> = () => {
     return (
@@ -18,6 +13,9 @@ const Navbar: NextPage<Props> = () => {
             </Link>
             <Link href="/transaction">
                 <Button>รายการธุรกรรม</Button>
+            </Link>
+            <Link href="/sign-in">
+                <Button>Sign In</Button>
             </Link>
         </div>
     );
